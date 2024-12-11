@@ -1,3 +1,31 @@
+:root {
+    --bg-primary: #a7000b;
+}
+
+.bg-primary {
+    background-color: #a7000b !important;
+}
+
+
+
 .kosik img {
-    width: 50px;
+    width: 42px;
+}
+
+.veci {
+  width: 100%;
+}
+
+.filtr, .produkty {
+    display: inline-block;
+    width: 50%;
+    box-sizing: border-box;
+    vertical-align: top;
+}
+
+.filtr {
+    float: left;
+}
+.produkty{
+    float: right;
 }
