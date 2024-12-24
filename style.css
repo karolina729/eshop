@@ -1,10 +1,25 @@
 :root {
-    --bg-primary: #a7000b;
+    --primary-color: #0cc735; 
+    --primary-text-color: white;
 }
 
-.bg-primary {
-    background-color: #a7000b !important;
+nav.navbar.text-bg-primary {
+    background-color: var(--primary-color) !important;
+    color: var(--primary-text-color) !important;
 }
+
+/* Přepíše výchozí třídu .btn-primary */
+.btn-primary {
+    background-color: #0cc735!important; /* Nastavení vlastní barvy pozadí */
+    border-color: #0cc735 !important; /* Nastavení barvy rámečku */
+    color: white !important; /* Barva textu */
+}
+
+.btn-primary:hover {
+    background-color: #0cc735 !important; /* Barva při najetí */
+    border-color: #0cc735 !important;
+}
+
 
 
 
@@ -12,20 +27,17 @@
     width: 42px;
 }
 
-.veci {
-  width: 100%;
+.card-img-top {
+    width: 100%;
+    height: 200px; 
+    object-fit: cover; }
+
+
+.card {
+    width: 100%;
 }
 
-.filtr, .produkty {
-    display: inline-block;
-    width: 50%;
-    box-sizing: border-box;
-    vertical-align: top;
-}
-
-.filtr {
-    float: left;
-}
-.produkty{
-    float: right;
+.tlacitko {
+    margin-top: 2%;
+    margin-bottom: 2%;
 }
