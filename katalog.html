@@ -11,52 +11,117 @@
   <body>
     <nav class="navbar text-bg-primary p-3" >
         <div class="container-fluid">
-          <a class="navbar-brand">Navbar</a>
+          <div class="nav">
+          <a class="navbar-brand">
+            Snails.cz</a></div>
+            <div class="hledat">
           <form class="d-flex" role="search">
             <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
             <button><i class="bi bi-search"><img src="images/search.svg"></i></button>
           </form>
+        </div>
           <div class="kosik">
-          <img src="images/263142.png" alt="Ikona košíku" data-bs-toggle="tooltip" data-bs-placement="bottom" data-bs-title="Tooltip on bottom">
+          <img src="images/263142.png" alt="Ikona košíku" data-bs-toggle="tooltip" data-bs-placement="bottom" data-bs-title="Váš košík je prázdný">
         </div>
         </div>  
       </nav>
    <div class="container">
     <div class="tlacitko">
-    <button class="btn btn-primary" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasScrolling" aria-controls="offcanvasScrolling">Enable body scrolling</button>
+    <button class="btn btn-primary" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasScrolling" aria-controls="offcanvasScrolling">Filtry</button>
 
     <div class="offcanvas offcanvas-start" data-bs-scroll="true" data-bs-backdrop="false" tabindex="-1" id="offcanvasScrolling" aria-labelledby="offcanvasScrollingLabel">
       <div class="offcanvas-header">
-        <h5 class="offcanvas-title" id="offcanvasScrollingLabel">Offcanvas with body scrolling</h5>
+        <h5 class="offcanvas-title" id="offcanvasScrollingLabel">Filtry</h5>
         <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
       </div>
       <div class="offcanvas-body">
-        <p>Try scrolling the rest of the page to see this option in action.</p>
         <ul class="list-group">
+          <div class="fnad">
+            <p>Podle dostupnosti:<p>
+            </div>
           <li class="list-group-item">
             <input class="form-check-input me-1" type="checkbox" value="" id="firstCheckbox">
-            <label class="form-check-label" for="firstCheckbox">Nejnovější</label>
+            <label class="form-check-label" for="firstCheckbox">Skladem</label>
           </li>
           <li class="list-group-item">
             <input class="form-check-input me-1" type="checkbox" value="" id="secondCheckbox">
-            <label class="form-check-label" for="secondCheckbox">Nejlevnější</label>
+            <label class="form-check-label" for="secondCheckbox">Na objednání</label>
           </li>
+          <div class="fnad">
+            <p>Cena:<p>
+            </div>
           <li class="list-group-item">
             <input class="form-check-input me-1" type="checkbox" value="" id="thirdCheckbox">
-            <label class="form-check-label" for="thirdCheckbox">Nejvíce prodávané</label>
+            <label class="form-check-label" for="thirdCheckbox">Do 60 KČ</label>
           </li>
+         <li class="list-group-item">
+            <input class="form-check-input me-1" type="checkbox" value="" id="firstCheckbox">
+            <label class="form-check-label" for="firstCheckbox">60-100 KČ</label>
+          </li>
+          <li class="list-group-item">
+            <input class="form-check-input me-1" type="checkbox" value="" id="secondCheckbox">
+            <label class="form-check-label" for="secondCheckbox">Nad 100 KČ</label>
+          </li>
+          <div class="fnad">
+            <p>Péče:<p>
+            </div>
+            <li class="list-group-item">
+              <input class="form-check-input me-1" type="checkbox" value="" id="firstCheckbox">
+              <label class="form-check-label" for="firstCheckbox">Snadná</label>
+            </li>
+            <li class="list-group-item">
+              <input class="form-check-input me-1" type="checkbox" value="" id="secondCheckbox">
+              <label class="form-check-label" for="secondCheckbox">Středně náročná</label>
+            </li>
+            <li class="list-group-item">
+              <input class="form-check-input me-1" type="checkbox" value="" id="secondCheckbox">
+              <label class="form-check-label" for="secondCheckbox">Náročná</label>
+            </li>
+            <div class="fnad">
+              <p>Barva:<p>
+              </div>
+            <li class="list-group-item">
+              <input class="form-check-input me-1" type="checkbox" value="" id="thirdCheckbox">
+              <label class="form-check-label" for="thirdCheckbox">Šedá</label>
+            </li>
+           <li class="list-group-item">
+              <input class="form-check-input me-1" type="checkbox" value="" id="firstCheckbox">
+              <label class="form-check-label" for="firstCheckbox">Hnědá</label>
+            </li>
+            <li class="list-group-item">
+              <input class="form-check-input me-1" type="checkbox" value="" id="secondCheckbox">
+              <label class="form-check-label" for="secondCheckbox">Více barev</label>
+            </li>
+            <div class="fnad">
+              <p>Specifické nabídky:<p>
+              </div>
+            <li class="list-group-item">
+              <input class="form-check-input me-1" type="checkbox" value="" id="thirdCheckbox">
+              <label class="form-check-label" for="thirdCheckbox">Akce</label>
+            </li>
+           <li class="list-group-item">
+              <input class="form-check-input me-1" type="checkbox" value="" id="firstCheckbox">
+              <label class="form-check-label" for="firstCheckbox">Doprodej</label>
+            </li>
+            <li class="list-group-item">
+              <input class="form-check-input me-1" type="checkbox" value="" id="secondCheckbox">
+              <label class="form-check-label" for="secondCheckbox">Novinky</label>
+            </li>
         </ul>
+      
       </div>
     </div>
     </div>
+    
       <div class="row row-cols-1 row-cols-md-3 g-4">
         <div class="col">
           <div class="card">
             <img src="images/P2240319.jpg" class="card-img-top" alt="...">
             <div class="card-body">
-              <h5 class="card-title">Card title</h5>
-              <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
-              <a href="#" class="btn btn-primary">Go somewhere</a>
+              <h5 class="card-title">Plž Vojenská přilba</h5>
+              <p class="card-text">Neritiny jsou skvělými pomocníky v udržování čistého akvária. Patří mezi nejlepší požírače povlakových řas.</p>
+              <p class="card-text1">59 KČ</p>
+              <a href="podrobnosti.html" class="btn btn-primary">Go somewhere</a>
             </div>
           </div>
         </div>
@@ -64,8 +129,9 @@
           <div class="card">
             <img src="images/neritina-zebra-2.jpeg" class="card-img-top" alt="...">
             <div class="card-body">
-              <h5 class="card-title">Card title</h5>
-              <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+              <h5 class="card-title">Plž Neritina zebra </h5>
+              <p class="card-text">Neritiny jsou skvělými pomocníky v udržování čistého akvária. Patří mezi nejlepší požírače povlakových řas.</p>
+              <p class="card-text1">59 KČ</p>
               <a href="#" class="btn btn-primary">Go somewhere</a>
             </div>
           </div>
@@ -74,18 +140,20 @@
           <div class="card">
             <img src="images/Vittina-Neritina-semiconica-12-400x267.jpg" class="card-img-top" alt="...">
             <div class="card-body">
-              <h5 class="card-title">Card title</h5>
-              <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional content.</p>
+              <h5 class="card-title">Neritina turrita</h5>
+              <p class="card-text">Neritiny jsou skvělými pomocníky v udržování čistého akvária. Patří mezi nejlepší požírače povlakových řas.</p>
+              <p class="card-text1">59 KČ</p>
               <a href="#" class="btn btn-primary">Go somewhere</a>
             </div>
           </div>
         </div>
         <div class="col">
           <div class="card">
-            <img src="..." class="card-img-top" alt="...">
+            <img src="images/filopaludina.jpeg" class="card-img-top" alt="...">
             <div class="card-body">
-              <h5 class="card-title">Card title</h5>
+              <h5 class="card-title">Plž Filopaludina sumatrensis</h5>
               <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+              <p class="card-text1">59 KČ</p>
               <a href="#" class="btn btn-primary">Go somewhere</a>
             </div>
           </div>
@@ -96,6 +164,7 @@
             <div class="card-body">
               <h5 class="card-title">Card title</h5>
               <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional content.</p>
+              <p class="card-text1">59 KČ</p>
               <a href="#" class="btn btn-primary">Go somewhere</a>
             </div>
           </div>
@@ -106,6 +175,7 @@
             <div class="card-body">
               <h5 class="card-title">Card title</h5>
               <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional content.</p>
+              <p class="card-text1">59 KČ</p>
               <a href="#" class="btn btn-primary">Go somewhere</a>
             </div>
           </div>
@@ -116,6 +186,7 @@
             <div class="card-body">
               <h5 class="card-title">Card title</h5>
               <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional content.</p>
+              <p class="card-text1">59 KČ</p>
               <a href="#" class="btn btn-primary">Go somewhere</a>
             </div>
           </div>
@@ -126,6 +197,7 @@
             <div class="card-body">
               <h5 class="card-title">Card title</h5>
               <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional content.</p>
+              <p class="card-text1">59 KČ</p>
               <a href="#" class="btn btn-primary">Go somewhere</a>
             </div>
           </div>
@@ -136,6 +208,7 @@
             <div class="card-body">
               <h5 class="card-title">Card title</h5>
               <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional content.</p>
+              <p class="card-text1">59 KČ</p>
               <a href="#" class="btn btn-primary">Go somewhere</a>
             </div>
           </div>
@@ -146,6 +219,7 @@
             <div class="card-body">
               <h5 class="card-title">Card title</h5>
               <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional content.</p>
+              <p class="card-text1">59 KČ</p>
               <a href="#" class="btn btn-primary">Go somewhere</a>
             </div>
           </div>
@@ -156,6 +230,7 @@
             <div class="card-body">
               <h5 class="card-title">Card title</h5>
               <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional content.</p>
+              <p class="card-text1">59 KČ</p>
               <a href="#" class="btn btn-primary">Go somewhere</a>
             </div>
           </div>
@@ -166,6 +241,7 @@
             <div class="card-body">
               <h5 class="card-title">Card title</h5>
               <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional content.</p>
+              <p class="card-text1">59 KČ</p>
               <a href="#" class="btn btn-primary">Go somewhere</a>
             </div>
           </div>
@@ -176,6 +252,7 @@
             <div class="card-body">
               <h5 class="card-title">Card title</h5>
               <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional content.</p>
+              <p class="card-text1">59 KČ</p>
               <a href="#" class="btn btn-primary">Go somewhere</a>
             </div>
           </div>
@@ -186,6 +263,7 @@
             <div class="card-body">
               <h5 class="card-title">Card title</h5>
               <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional content.</p>
+              <p class="card-text1">59 KČ</p>
               <a href="#" class="btn btn-primary">Go somewhere</a>
             </div>
           </div>
@@ -196,6 +274,7 @@
             <div class="card-body">
               <h5 class="card-title">Card title</h5>
               <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional content.</p>
+              <p class="card-text1">59 KČ</p>
               <a href="#" class="btn btn-primary">Go somewhere</a>
             </div>
           </div>
