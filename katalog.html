@@ -1,69 +1,129 @@
 <!doctype html>
 <html lang="en">
-  <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Bootstrap demo</title>
-    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
-    <link rel="stylesheet" href="style.css">
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
-  </head>
-  <body>
-    <nav class="navbar text-bg-primary p-3" >
-        <div class="container-fluid">
-          <div class="nav">
-          <a class="navbar-brand">
-            Snails.cz</a></div>
-            <div class="hledat">
-          <form class="d-flex" role="search">
-            <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
-            <button><i class="bi bi-search"><img src="images/search.svg"></i></button>
-          </form>
-        </div>
-          <div class="kosik">
-          <img src="images/263142.png" alt="Ikona košíku" data-bs-toggle="tooltip" data-bs-placement="bottom" data-bs-title="Váš košík je prázdný">
-        </div>
-        </div>  
-      </nav>
-   <div class="container">
-    <div class="tlacitko">
-    <button class="btn btn-primary" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasScrolling" aria-controls="offcanvasScrolling">Filtry</button>
 
-    <div class="offcanvas offcanvas-start" data-bs-scroll="true" data-bs-backdrop="false" tabindex="-1" id="offcanvasScrolling" aria-labelledby="offcanvasScrollingLabel">
-      <div class="offcanvas-header">
-        <h5 class="offcanvas-title" id="offcanvasScrollingLabel">Filtry</h5>
-        <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Bootstrap demo</title>
+  <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+</head>
+
+<body>
+  <nav class="navbar text-bg-primary p-3">
+    <div class="container-fluid">
+      <div class="nav">
+        <a class="navbar-brand">
+          Snails.cz</a>
       </div>
-      <div class="offcanvas-body">
-        <ul class="list-group">
-          <div class="fnad">
-            <p>Podle dostupnosti:<p>
+      <div class="hledat">
+        <form class="d-flex" role="search">
+          <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+          <button><i class="bi bi-search"><img src="images/search.svg"></i></button>
+        </form>
+      </div>
+      <div class="kosik">
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+            aria-expanded="false">
+            <img src="images/263142.png">
+          </a>
+          <ul class="dropdown-menu dropdown-menu-end">
+            
+            <li><a class="dropdown-item" href="#">
+                <div class="d-flex align-items-center p-1">
+                  <div>
+                    <img src="images/hive-pins-anc-gallery-02.jpg" alt="Fotka produktu"
+                      style="width: 100px; height: 100px;">
+                  </div>
+                  <div class="ms-3">
+                    <p class="fw-semibold">HIVE Pins 3 ANC Sakura Pink</p>
+                    <p class="fw-bold">1 499 Kč</p>
+                  </div>
+                </div>
+              </a>
+            </li>
+            <li>
+              <hr class="dropdown-divider">
+            </li>
+            <li><a class="dropdown-item" href="#">
+                <div class="d-flex align-items-center p-1">
+                  <div>
+                    <img src="images/hive-podsie-3-gallery-01.jpg" alt="Fotka produktu"
+                      style="width: 100px; height: 100px;">
+                  </div>
+                  <div class="ms-3">
+                    <p class="fw-semibold">HIVE Podsie 3 Black</p>
+                    <p class="fw-bold">999 Kč</p>
+                  </div>
+                </div>
+              </a>
+            </li>
+            <li>
+              <hr class="dropdown-divider">
+            </li>
+            <li><a class="dropdown-item text-center p-2" href="#">
+                Do košíku
+              </a>
+            </li>
+          </ul>
+        </li>
+      </ul>
+
+    </div>
+  </div>
+      </div>
+    </div>
+  </nav>
+  <div class="container">
+    <div class="d-flex justify-content-start">
+
+    
+    <div class="tlacitko">
+      <button class="btn btn-primary" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasScrolling"
+        aria-controls="offcanvasScrolling">Filtry</button>
+
+      <div class="offcanvas offcanvas-start" data-bs-scroll="true" data-bs-backdrop="false" tabindex="-1"
+        id="offcanvasScrolling" aria-labelledby="offcanvasScrollingLabel">
+        <div class="offcanvas-header">
+          <h5 class="offcanvas-title" id="offcanvasScrollingLabel">Filtry</h5>
+          <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+        </div>
+        <div class="offcanvas-body">
+          <ul class="list-group">
+            <div class="fnad">
+              <p>Podle dostupnosti:
+              <p>
             </div>
-          <li class="list-group-item">
-            <input class="form-check-input me-1" type="checkbox" value="" id="firstCheckbox">
-            <label class="form-check-label" for="firstCheckbox">Skladem</label>
-          </li>
-          <li class="list-group-item">
-            <input class="form-check-input me-1" type="checkbox" value="" id="secondCheckbox">
-            <label class="form-check-label" for="secondCheckbox">Na objednání</label>
-          </li>
-          <div class="fnad">
-            <p>Cena:<p>
+            <li class="list-group-item">
+              <input class="form-check-input me-1" type="checkbox" value="" id="firstCheckbox">
+              <label class="form-check-label" for="firstCheckbox">Skladem</label>
+            </li>
+            <li class="list-group-item">
+              <input class="form-check-input me-1" type="checkbox" value="" id="secondCheckbox">
+              <label class="form-check-label" for="secondCheckbox">Na objednání</label>
+            </li>
+            <div class="fnad">
+              <p>Cena:
+              <p>
             </div>
-          <li class="list-group-item">
-            <input class="form-check-input me-1" type="checkbox" value="" id="thirdCheckbox">
-            <label class="form-check-label" for="thirdCheckbox">Do 60 KČ</label>
-          </li>
-         <li class="list-group-item">
-            <input class="form-check-input me-1" type="checkbox" value="" id="firstCheckbox">
-            <label class="form-check-label" for="firstCheckbox">60-100 KČ</label>
-          </li>
-          <li class="list-group-item">
-            <input class="form-check-input me-1" type="checkbox" value="" id="secondCheckbox">
-            <label class="form-check-label" for="secondCheckbox">Nad 100 KČ</label>
-          </li>
-          <div class="fnad">
-            <p>Péče:<p>
+            <li class="list-group-item">
+              <input class="form-check-input me-1" type="checkbox" value="" id="thirdCheckbox">
+              <label class="form-check-label" for="thirdCheckbox">Do 60 KČ</label>
+            </li>
+            <li class="list-group-item">
+              <input class="form-check-input me-1" type="checkbox" value="" id="firstCheckbox">
+              <label class="form-check-label" for="firstCheckbox">60-100 KČ</label>
+            </li>
+            <li class="list-group-item">
+              <input class="form-check-input me-1" type="checkbox" value="" id="secondCheckbox">
+              <label class="form-check-label" for="secondCheckbox">Nad 100 KČ</label>
+            </li>
+            <div class="fnad">
+              <p>Péče:
+              <p>
             </div>
             <li class="list-group-item">
               <input class="form-check-input me-1" type="checkbox" value="" id="firstCheckbox">
@@ -78,13 +138,14 @@
               <label class="form-check-label" for="secondCheckbox">Náročná</label>
             </li>
             <div class="fnad">
-              <p>Barva:<p>
-              </div>
+              <p>Barva:
+              <p>
+            </div>
             <li class="list-group-item">
               <input class="form-check-input me-1" type="checkbox" value="" id="thirdCheckbox">
               <label class="form-check-label" for="thirdCheckbox">Šedá</label>
             </li>
-           <li class="list-group-item">
+            <li class="list-group-item">
               <input class="form-check-input me-1" type="checkbox" value="" id="firstCheckbox">
               <label class="form-check-label" for="firstCheckbox">Hnědá</label>
             </li>
@@ -93,221 +154,245 @@
               <label class="form-check-label" for="secondCheckbox">Více barev</label>
             </li>
             <div class="fnad">
-              <p>Specifické nabídky:<p>
-              </div>
+              <p>Specifické nabídky:
+              <p>
+            </div>
             <li class="list-group-item">
               <input class="form-check-input me-1" type="checkbox" value="" id="thirdCheckbox">
               <label class="form-check-label" for="thirdCheckbox">Akce</label>
             </li>
-           <li class="list-group-item">
+            <li class="list-group-item">
               <input class="form-check-input me-1" type="checkbox" value="" id="firstCheckbox">
               <label class="form-check-label" for="firstCheckbox">Doprodej</label>
             </li>
             <div class="novinkyspod">
-            <li class="list-group-item">
-              <input class="form-check-input me-1" type="checkbox" value="" id="secondCheckbox">
-              <label class="form-check-label" for="secondCheckbox">Novinky</label>
-           </div> 
-          </li>
-        </ul>
-      
+              <li class="list-group-item">
+                <input class="form-check-input me-1" type="checkbox" value="" id="secondCheckbox">
+                <label class="form-check-label" for="secondCheckbox">Novinky</label>
+            </div>
+            </li>
+          </ul>
+
+        </div>
       </div>
     </div>
+    <div class="dropdown">
+      <button class="btn btn-secondary dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+        Dropdown
+      </button>
+      <ul class="dropdown-menu">
+        <li><button class="dropdown-item" type="button">Action</button></li>
+        <li><button class="dropdown-item" type="button">Another action</button></li>
+        <li><button class="dropdown-item" type="button">Something else here</button></li>
+      </ul>
     </div>
-    
-      <div class="row row-cols-1 row-cols-md-3 g-4">
-        <div class="col">
-          <div class="card">
-            <img src="images/P2240319.jpg" class="card-img-top" alt="...">
-            <div class="card-body">
-              <h5 class="card-title">Plž Vojenská přilba</h5>
-              <p class="card-text">Neritiny jsou skvělými pomocníky v udržování čistého akvária. Patří mezi nejlepší požírače povlakových řas.</p>
-              <p class="card-text1">59 KČ</p>
-              <a href="podrobnosti.html" class="btn btn-primary">Zobrazit více</a>
-            </div>
+  </div>
+
+    <div class="row row-cols-1 row-cols-md-3 g-4">
+      <div class="col">
+        <div class="card">
+          <img src="images/P2240319.jpg" class="card-img-top" alt="...">
+          <div class="card-body">
+            <h5 class="card-title">Plž Vojenská přilba</h5>
+            <p class="card-text">Neritiny jsou skvělými pomocníky v udržování čistého akvária. Patří mezi nejlepší
+              požírače povlakových řas.</p>
+            <p class="card-text1">59 KČ</p>
+            <a href="podrobnosti.html" class="btn btn-primary">Zobrazit více</a>
           </div>
         </div>
-        <div class="col">
-          <div class="card">
-            <img src="images/neritina-zebra-2.jpeg" class="card-img-top" alt="...">
-            <div class="card-body">
-              <h5 class="card-title">Plž Neritina zebra </h5>
-              <p class="card-text">Neritiny jsou skvělými pomocníky v udržování čistého akvária. Patří mezi nejlepší požírače povlakových řas.</p>
-              <p class="card-text1">58 KČ</p>
-              <a href="podrobnosti.html" class="btn btn-primary">Zobrazit více</a>
-            </div>
-          </div>
-        </div>
-        <div class="col">
-          <div class="card">
-            <img src="images/Vittina-Neritina-semiconica-12-400x267.jpg" class="card-img-top" alt="...">
-            <div class="card-body">
-              <h5 class="card-title">Neritina turrita</h5>
-              <p class="card-text">Neritiny jsou skvělými pomocníky v udržování čistého akvária. Patří mezi nejlepší požírače povlakových řas.</p>
-              <p class="card-text1">59 KČ</p>
-              <a href="podrobnosti.html" class="btn btn-primary">Zobrazit více</a>
-            </div>
-          </div>
-        </div>
-        <div class="col">
-          <div class="card">
-            <img src="images/filopaludina.jpeg" class="card-img-top" alt="...">
-            <div class="card-body">
-              <h5 class="card-title">Plž Filopaludina sumatrensis</h5>
-              <p class="card-text">druh velkého sladkovodního plže, který pochází z Jihovýchodní Asie.</p>
-              <p class="card-text1">74 KČ</p>
-              <a href="podrobnosti.html"class="btn btn-primary">Zobrazit více</a>
-            </div>
-          </div>
-        </div>
-        <div class="col">
-          <div class="card">
-            <img src="images/letavka.jpeg" class="card-img-top" alt="...">
-            <div class="card-body">
-              <h5 class="card-title">Plž Levatka ostrá</h5>
-              <p class="card-text">sladkovodní plž, který se pyšní svou rychlostí a schopností konzumovat odumřelé části rostlin.</p>
-              <p class="card-text1">199 KČ/ 20ks</p>
-              <a href="podrobnosti.html" class="btn btn-primary">Zobrazit více</a>
-            </div>
-          </div>
-        </div>
-        <div class="col">
-          <div class="card">
-            <img src="images/pruhl.jpg" class="card-img-top" alt="...">
-            <div class="card-body">
-              <h5 class="card-title">Plž Ampulária bílá</h5>
-              <p class="card-text">je velmi vzácná. Její ulita je téměř průhledná, a dokonce mohou být vidět její vnitřní orgány.</p>
-              <p class="card-text1">104 KČ</p>
-              <a href="podrobnosti.html" class="btn btn-primary">Zobrazit více</a>
-            </div>
-          </div> 
-        </div>
-        <div class="col">
-          <div class="card">
-            <img src="images/brotia.jpg" class="card-img-top" alt="...">
-            <div class="card-body">
-              <h5 class="card-title">Plž Brotia herculea</h5>
-              <p class="card-text">Je to substrátová zdravotní policie, dokáže se do něj zavrtat a zlikvidovat zbytky krmiva a odpadní látky. </p>
-              <p class="card-text1">39 KČ</p>
-              <a href="podrobnosti.html" class="btn btn-primary">Zobrazit více</a>
-            </div>
-          </div>
-        </div>
-        <div class="col">
-          <div class="card">
-            <img src="images/clithon-zebra.jpg" class="card-img-top" alt="...">
-            <div class="card-body">
-              <h5 class="card-title">Plž Clithon sp.</h5>
-              <p class="card-text">Je to neúnavný požírač řas, který dokáže skla akvária, kameny, či dekorace udržet čisté a bez zelených teček.</p>
-              <p class="card-text1">39 KČ</p>
-              <a href="podrobnosti.html" class="btn btn-primary">Zobrazit více</a>
-            </div>
-          </div>
-        </div>
-        <div class="col">
-          <div class="card">
-            <img src="images/helena.jpg" class="card-img-top" alt="...">
-            <div class="card-body">
-              <h5 class="card-title">Plž Clea Helena</h5>
-              <p class="card-text">Tenhle plž je často doporučovaným řešením přemnožení jiných druhů plžů.</p>
-              <p class="card-text1">29 KČ</p>
-              <a href="podrobnosti.html" class="btn btn-primary">Zobrazit více</a>
-            </div>
-          </div>
-        </div>
-        <div class="col">
-          <div class="card">
-            <img src="images/fialova.jpg" class="card-img-top" alt="...">
-            <div class="card-body">
-              <h5 class="card-title">Plž Ampulária fialová</h5>
-              <p class="card-text">Tento druh Ampulárie má velmi pěknou, fialovou barvu, je velmi výrazný a hned si ho v akváriu všimneš.</p>
-              <p class="card-text1">95 KČ</p>
-              <a href="podrobnosti.html" class="btn btn-primary">Zobrazit více</a>
-            </div>
-          </div>
-        </div>
-        <div class="col">
-          <div class="card">
-            <img src="images/zlutaa.jpg" class="card-img-top" alt="...">
-            <div class="card-body">
-              <h5 class="card-title">Plž Ampulária žlutá</h5>
-              <p class="card-text">Tento druh Ampulárie má velmi pěknou, žlutou až zlatou barvu a je velmi výrazný. </p>
-              <p class="card-text1">89 KČ</p>
-              <a href="podrobnosti.html" class="btn btn-primary">Zobrazit více</a>
-            </div>
-          </div>
-        </div>
-        <div class="col">
-          <div class="card">
-            <img src="images/hneda.jpg" class="card-img-top" alt="...">
-            <div class="card-body">
-              <h5 class="card-title">Plž Apulária hnědá</h5>
-              <p class="card-text">Tento druh Ampulárie má velmi pěknou, hnědou kresbu a hned si ho v akváriu všimneš.</p>
-              <p class="card-text1">71 KČ</p>
-              <a href="podrobnosti.html" class="btn btn-primary">Zobrazit více</a>
-            </div>
-          </div>
-        </div>
-        <div class="col">
-          <div class="card">
-            <img src="images/kuzel.jpg" class="card-img-top" alt="...">
-            <div class="card-body">
-              <h5 class="card-title">Plž Tylomelania sp.</h5>
-              <p class="card-text">Plžů Tylomelania existuje mnoho druhů, které se odlišují zbarvením ulity i samotného těla.</p>
-              <p class="card-text1">79 KČ</p>
-              <a href="podrobnosti.html" class="btn btn-primary">Zobrazit více</a>
-            </div>
-          </div>
-        </div>
-        <div class="col">
-          <div class="card">
-            <img src="images/padagula.jpg" class="card-img-top" alt="...">
-            <div class="card-body">
-              <h5 class="card-title">Plž Pagodula</h5>
-              <p class="card-text">Je to poměrně vzácný plž s překrásnou ulitou. Barva těla může být světle bílá nebo žlutá.</p>
-              <p class="card-text1">107 KČ</p>
-              <a href="podrobnosti.html" class="btn btn-primary">Zobrazit více</a>
-            </div>
-          </div>
-        </div>
-        <div class="col">
-          <div class="card">
-            <img src="images/wai.jpg" class="card-img-top" alt="...">
-            <div class="card-body">
-              <h5 class="card-title">Plž Neritina waigiensis</h5>
-              <p class="card-text">Neritiny jsou nejlepší žrouti povlakových řas a až neuvěřitelně ti usnadní čištění akvária.</p>
-              <p class="card-text1">131 KČ</p>
-              <a href="podrobnosti.html" class="btn btn-primary">Zobrazit více</a>
-            </div>
-          </div>
-        </div>
-        
       </div>
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    </div>
-      <footer class="text-center bg-secondary text-white mt-4">
-        <div class="footer">
-          <p class="p-3">
-            Vytvořila Karolína Šalamounová 2025</p>
+      <div class="col">
+        <div class="card">
+          <img src="images/neritina-zebra-2.jpeg" class="card-img-top" alt="...">
+          <div class="card-body">
+            <h5 class="card-title">Plž Neritina zebra </h5>
+            <p class="card-text">Neritiny jsou skvělými pomocníky v udržování čistého akvária. Patří mezi nejlepší
+              požírače povlakových řas.</p>
+            <p class="card-text1">58 KČ</p>
+            <a href="podrobnosti.html" class="btn btn-primary">Zobrazit více</a>
+          </div>
         </div>
-      </footer>
-    
-    
-    
-    
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
-    <script>const tooltipTriggerList = document.querySelectorAll('[data-bs-toggle="tooltip"]')
-const tooltipList = [...tooltipTriggerList].map(tooltipTriggerEl => new bootstrap.Tooltip(tooltipTriggerEl))</script>
-  </body>
+      </div>
+      <div class="col">
+        <div class="card">
+          <img src="images/Vittina-Neritina-semiconica-12-400x267.jpg" class="card-img-top" alt="...">
+          <div class="card-body">
+            <h5 class="card-title">Neritina turrita</h5>
+            <p class="card-text">Neritiny jsou skvělými pomocníky v udržování čistého akvária. Patří mezi nejlepší
+              požírače povlakových řas.</p>
+            <p class="card-text1">59 KČ</p>
+            <a href="podrobnosti.html" class="btn btn-primary">Zobrazit více</a>
+          </div>
+        </div>
+      </div>
+      <div class="col">
+        <div class="card">
+          <img src="images/filopaludina.jpeg" class="card-img-top" alt="...">
+          <div class="card-body">
+            <h5 class="card-title">Plž Filopaludina sumatrensis</h5>
+            <p class="card-text">druh velkého sladkovodního plže, který pochází z Jihovýchodní Asie.</p>
+            <p class="card-text1">74 KČ</p>
+            <a href="podrobnosti.html" class="btn btn-primary">Zobrazit více</a>
+          </div>
+        </div>
+      </div>
+      <div class="col">
+        <div class="card">
+          <img src="images/letavka.jpeg" class="card-img-top" alt="...">
+          <div class="card-body">
+            <h5 class="card-title">Plž Levatka ostrá</h5>
+            <p class="card-text">sladkovodní plž, který se pyšní svou rychlostí a schopností konzumovat odumřelé části
+              rostlin.</p>
+            <p class="card-text1">199 KČ/ 20ks</p>
+            <a href="podrobnosti.html" class="btn btn-primary">Zobrazit více</a>
+          </div>
+        </div>
+      </div>
+      <div class="col">
+        <div class="card">
+          <img src="images/pruhl.jpg" class="card-img-top" alt="...">
+          <div class="card-body">
+            <h5 class="card-title">Plž Ampulária bílá</h5>
+            <p class="card-text">je velmi vzácná. Její ulita je téměř průhledná, a dokonce mohou být vidět její vnitřní
+              orgány.</p>
+            <p class="card-text1">104 KČ</p>
+            <a href="podrobnosti.html" class="btn btn-primary">Zobrazit více</a>
+          </div>
+        </div>
+      </div>
+      <div class="col">
+        <div class="card">
+          <img src="images/brotia.jpg" class="card-img-top" alt="...">
+          <div class="card-body">
+            <h5 class="card-title">Plž Brotia herculea</h5>
+            <p class="card-text">Je to substrátová zdravotní policie, dokáže se do něj zavrtat a zlikvidovat zbytky
+              krmiva a odpadní látky. </p>
+            <p class="card-text1">39 KČ</p>
+            <a href="podrobnosti.html" class="btn btn-primary">Zobrazit více</a>
+          </div>
+        </div>
+      </div>
+      <div class="col">
+        <div class="card">
+          <img src="images/clithon-zebra.jpg" class="card-img-top" alt="...">
+          <div class="card-body">
+            <h5 class="card-title">Plž Clithon sp.</h5>
+            <p class="card-text">Je to neúnavný požírač řas, který dokáže skla akvária, kameny, či dekorace udržet čisté
+              a bez zelených teček.</p>
+            <p class="card-text1">39 KČ</p>
+            <a href="podrobnosti.html" class="btn btn-primary">Zobrazit více</a>
+          </div>
+        </div>
+      </div>
+      <div class="col">
+        <div class="card">
+          <img src="images/helena.jpg" class="card-img-top" alt="...">
+          <div class="card-body">
+            <h5 class="card-title">Plž Clea Helena</h5>
+            <p class="card-text">Tenhle plž je často doporučovaným řešením přemnožení jiných druhů plžů.</p>
+            <p class="card-text1">29 KČ</p>
+            <a href="podrobnosti.html" class="btn btn-primary">Zobrazit více</a>
+          </div>
+        </div>
+      </div>
+      <div class="col">
+        <div class="card">
+          <img src="images/fialova.jpg" class="card-img-top" alt="...">
+          <div class="card-body">
+            <h5 class="card-title">Plž Ampulária fialová</h5>
+            <p class="card-text">Tento druh Ampulárie má velmi pěknou, fialovou barvu, je velmi výrazný a hned si ho v
+              akváriu všimneš.</p>
+            <p class="card-text1">95 KČ</p>
+            <a href="podrobnosti.html" class="btn btn-primary">Zobrazit více</a>
+          </div>
+        </div>
+      </div>
+      <div class="col">
+        <div class="card">
+          <img src="images/zlutaa.jpg" class="card-img-top" alt="...">
+          <div class="card-body">
+            <h5 class="card-title">Plž Ampulária žlutá</h5>
+            <p class="card-text">Tento druh Ampulárie má velmi pěknou, žlutou až zlatou barvu a je velmi výrazný. </p>
+            <p class="card-text1">89 KČ</p>
+            <a href="podrobnosti.html" class="btn btn-primary">Zobrazit více</a>
+          </div>
+        </div>
+      </div>
+      <div class="col">
+        <div class="card">
+          <img src="images/hneda.jpg" class="card-img-top" alt="...">
+          <div class="card-body">
+            <h5 class="card-title">Plž Apulária hnědá</h5>
+            <p class="card-text">Tento druh Ampulárie má velmi pěknou, hnědou kresbu a hned si ho v akváriu všimneš.</p>
+            <p class="card-text1">71 KČ</p>
+            <a href="podrobnosti.html" class="btn btn-primary">Zobrazit více</a>
+          </div>
+        </div>
+      </div>
+      <div class="col">
+        <div class="card">
+          <img src="images/kuzel.jpg" class="card-img-top" alt="...">
+          <div class="card-body">
+            <h5 class="card-title">Plž Tylomelania sp.</h5>
+            <p class="card-text">Plžů Tylomelania existuje mnoho druhů, které se odlišují zbarvením ulity i samotného
+              těla.</p>
+            <p class="card-text1">79 KČ</p>
+            <a href="podrobnosti.html" class="btn btn-primary">Zobrazit více</a>
+          </div>
+        </div>
+      </div>
+      <div class="col">
+        <div class="card">
+          <img src="images/padagula.jpg" class="card-img-top" alt="...">
+          <div class="card-body">
+            <h5 class="card-title">Plž Pagodula</h5>
+            <p class="card-text">Je to poměrně vzácný plž s překrásnou ulitou. Barva těla může být světle bílá nebo
+              žlutá.</p>
+            <p class="card-text1">107 KČ</p>
+            <a href="podrobnosti.html" class="btn btn-primary">Zobrazit více</a>
+          </div>
+        </div>
+      </div>
+      <div class="col">
+        <div class="card">
+          <img src="images/wai.jpg" class="card-img-top" alt="...">
+          <div class="card-body">
+            <h5 class="card-title">Plž Neritina waigiensis</h5>
+            <p class="card-text">Neritiny jsou nejlepší žrouti povlakových řas a až neuvěřitelně ti usnadní čištění
+              akvária.</p>
+            <p class="card-text1">131 KČ</p>
+            <a href="podrobnosti.html" class="btn btn-primary">Zobrazit více</a>
+          </div>
+        </div>
+      </div>
+
+    </div>
+
+
+
+
+
+
+
+
+
+
+  </div>
+  <footer class="text-center bg-secondary text-white mt-4">
+    <div class="footer">
+      <p class="p-3">
+        Vytvořila Karolína Šalamounová 2025</p>
+    </div>
+  </footer>
+
+
+
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+    crossorigin="anonymous"></script>
+  <script>const tooltipTriggerList = document.querySelectorAll('[data-bs-toggle="tooltip"]')
+    const tooltipList = [...tooltipTriggerList].map(tooltipTriggerEl => new bootstrap.Tooltip(tooltipTriggerEl))</script>
+</body>
+
 </html>
-
-

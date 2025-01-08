@@ -8,15 +8,15 @@ nav.navbar.text-bg-primary {
     color: var(--primary-text-color) !important;
 }
 
-/* Přepíše výchozí třídu .btn-primary */
+
 .btn-primary {
-    background-color: #0cc735!important; /* Nastavení vlastní barvy pozadí */
-    border-color: #0cc735 !important; /* Nastavení barvy rámečku */
-    color: white !important; /* Barva textu */
+    background-color: #0cc735!important;
+    border-color: #0cc735 !important; 
+    color: white !important; 
 }
 
 .btn-primary:hover {
-    background-color: #0cc735 !important; /* Barva při najetí */
+    background-color: #0cc735 !important; 
     border-color: #0cc735 !important;
 }
 
@@ -89,7 +89,7 @@ nav.navbar.text-bg-primary {
     gap: 3%;
 }
 .obrazek img {
-    max-width: 600px; 
+    max-width: 1000px; 
     height: 400px;
       margin-right: 20px; 
       margin-top: 2%;
@@ -112,3 +112,8 @@ nav.navbar.text-bg-primary {
     padding: 3%;
 }
 
+.dropdown {
+    margin-top: 2%;
+    margin-bottom: 2%;
+    margin-left: 2%;
+}
