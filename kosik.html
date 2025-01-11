@@ -12,24 +12,27 @@
 </head>
 
 <body>
-    <nav class="navbar text-bg-primary p-3">
-        <div class="container-fluid">
-            <div class="nav">
-                <a class="navbar-brand">
-                    Snails.cz</a>
-            </div>
-            <div class="hledat">
-                <form class="d-flex" role="search">
-                    <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
-                    <button><i class="bi bi-search"><img src="images/search.svg"></i></button>
-                </form>
-            </div>
-            <div class="kosik">
-                <a href="kosik.html"><img src="images/263142.png" alt="Ikona košíku" data-bs-toggle="tooltip"
-                        data-bs-placement="bottom" data-bs-title="Váš košík je prázdný"></a>
-            </div>
-        </div>
-    </nav>
+  <nav class="navbar text-bg-primary p-3">
+    <div class="container-fluid">
+      <div class="nav">
+        <a href="katalog.html" class="navbar-brand">
+          Snails.cz</a>
+      </div>
+      <div class="hledat">
+        <form class="d-flex" role="search">
+          <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+          <button><i class="bi bi-search"><img src="images/search.svg"></i></button>
+        </form>
+      </div>
+      <div class="kosik">
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" href="kosik.html" role="button" data-bs-toggle="dropdown"
+            aria-expanded="false">
+            <img src="images/263142.png">
+          </a>
+        </li>
+        </div> 
+        </nav>
 </div>
 <footer class="text-center bg-secondary text-white mt-4">
   <div class="footer">
