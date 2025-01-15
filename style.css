@@ -112,8 +112,39 @@ nav.navbar.text-bg-primary {
     padding: 3%;
 }
 
-.dropdown {
+.select {
     margin-top: 2%;
     margin-bottom: 2%;
     margin-left: 2%;
 }
+
+.vse {
+    display: flex;
+    gap: 8%;
+    margin-left: 12%;
+}
+.kos a {
+font-size: 150%;
+    text-align: center;
+    line-height: 100px;
+    margin: auto;
+    text-decoration: none;
+    color: black;
+    
+}
+
+.sipka {
+    width: 40px;
+    text-align: center;
+    line-height: 100px;
+}
+
+.kos1 a {
+    font-size: 150%;
+        text-align: center;
+        line-height: 100px;
+        margin: auto;
+        text-decoration: none;
+        color: black;
+        
+    }
