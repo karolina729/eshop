@@ -1,5 +1,5 @@
 :root {
-    --primary-color: #0cc735; 
+    --primary-color: #0cc735;
     --primary-text-color: white;
 }
 
@@ -10,13 +10,13 @@ nav.navbar.text-bg-primary {
 
 
 .btn-primary {
-    background-color: #0cc735!important;
-    border-color: #0cc735 !important; 
-    color: white !important; 
+    background-color: #0cc735 !important;
+    border-color: #0cc735 !important;
+    color: white !important;
 }
 
 .btn-primary:hover {
-    background-color: #0cc735 !important; 
+    background-color: #0cc735 !important;
     border-color: #0cc735 !important;
 }
 
@@ -29,8 +29,9 @@ nav.navbar.text-bg-primary {
 
 .card-img-top {
     width: 100%;
-    height: 200px; 
-    object-fit: cover; }
+    height: 200px;
+    object-fit: cover;
+}
 
 
 .card {
@@ -46,7 +47,7 @@ nav.navbar.text-bg-primary {
     font-size: 170%;
 }
 
-.nav a{
+.nav a {
     font-size: 200%;
     margin-left: 65%;
 }
@@ -59,7 +60,7 @@ nav.navbar.text-bg-primary {
     margin-left: 59%;
 }
 
- .fnad {
+.fnad {
     font-size: 180%;
     margin-top: 4%;
 }
@@ -79,7 +80,7 @@ nav.navbar.text-bg-primary {
     justify-content: center;
     font-size: 250%;
     margin-top: 2%;
-    
+
 }
 
 .obrazek {
@@ -88,13 +89,14 @@ nav.navbar.text-bg-primary {
     font-size: 180%;
     gap: 3%;
 }
+
 .obrazek img {
-    max-width: 1000px; 
+    max-width: 1000px;
     height: 400px;
-      margin-right: 20px; 
-      margin-top: 2%;
-      border-radius: 3%;
-    }
+    margin-right: 20px;
+    margin-top: 2%;
+    border-radius: 3%;
+}
 
 .clanky {
     margin-top: 5%;
@@ -121,16 +123,17 @@ nav.navbar.text-bg-primary {
 .vse {
     display: flex;
     gap: 8%;
-    margin-left: 12%;
+    margin-left: 10%;
 }
+
 .kos a {
-font-size: 150%;
+    font-size: 150%;
     text-align: center;
     line-height: 100px;
     margin: auto;
     text-decoration: none;
     color: black;
-    
+
 }
 
 .sipka {
@@ -141,10 +144,206 @@ font-size: 150%;
 
 .kos1 a {
     font-size: 150%;
-        text-align: center;
-        line-height: 100px;
-        margin: auto;
-        text-decoration: none;
-        color: black;
-        
-    }
+    text-align: center;
+    line-height: 70px;
+    margin: auto;
+    text-decoration: none;
+    color: #0d942a;
+
+}
+
+.kos2 a {
+    font-size: 150%;
+    text-align: center;
+    line-height: 100px;
+    margin: auto;
+    text-decoration: none;
+    color: #0d942a;
+
+}
+
+
+table {
+    border-collapse: collapse;
+    width: 100%;
+    margin-top: 5%;
+}
+
+th,
+td {
+    border: 1px solid #ddd;
+    padding: 8px;
+    text-align: left;
+}
+
+th {
+    background-color: #f4f4f4;
+    font-size: 110%;
+}
+
+td img {
+    display: flex;
+    width: 200px;
+}
+
+td {
+    color: #0d942a;
+}
+
+.kssk {
+    font-size: 108%;
+}
+
+.kssks {
+    font-size: 120%;
+}
+
+td .form-select {
+    width: 40%;
+}
+
+.cena12 {
+    font-size: 150%;
+}
+
+.cena13 {
+    font-size: 160%;
+    color: black;
+}
+.cena14 {
+    font-size: 160%;
+    color: black;
+    text-align: right;
+    padding-right: 12%;
+}
+.pl {
+    font-size: 110%;
+    color: black;
+}
+
+.plo img {
+    width: 170px;
+}
+.plop img {
+    width: 130px;
+}
+.pokracovat a {
+    display: inline-block;
+    margin-left: 80%;
+    margin-top: 3%;
+    font-size: 120%;
+
+}
+
+.form-check-label2 img {
+    width: 100px;
+}
+
+.form-check-label2 {
+    margin-left: 2%;
+}
+
+.for {
+    font-size: 150%;
+    margin-left: 5%;
+}
+
+.for1 {
+    font-size: 150%;
+    display: flex;
+    justify-content: end;
+}
+
+.list-group {
+    width: 50%;
+    display: flex;
+    margin: auto;
+    margin-top: 2%;
+}
+
+.platbazp {
+    font-size: 180%;
+    margin: auto;
+    margin-top: 3%;
+    display: flex;
+    justify-content: center;
+}
+
+.form-check-label1 {
+    display: flex;
+    margin-bottom: 2%;
+    margin-top: 5%;
+}
+
+.formle {
+    width: 55%;
+    margin: auto;
+    margin-right: 25%;
+}
+
+.hstack {
+    gap: 3%;
+    width: 32%;
+    margin-top: 3%;
+}
+
+.platbazb {
+    font-size: 180%;
+    margin: auto;
+    margin-top: 3%;
+    display: flex;
+    justify-content: center;
+    margin-left: 7%;
+}
+
+.col {
+    margin-top: 5%;
+}
+
+.pr {
+    padding-left: 60px;
+}
+
+.do {
+    padding-right: 80px;
+}
+
+.mn {
+    padding-right: 50px;
+}
+
+.cel {
+    padding-left: 40px;
+}
+
+.cej {
+    padding-left: 40px;
+}
+
+.mno {
+    padding-left: 10px;
+    padding-right: 70px;
+}
+.celo {
+    padding-right: 40px;
+}
+
+.cejo {
+    padding-left: 40px;
+}
+
+.dcel {
+    text-align: right;
+    padding-right: 12%;
+}
+
+.konec {
+    padding-left: 55px;
+    font-size: 150%;
+}
+
+.konec1 {
+    text-align: right;
+    padding-right: 10%;
+    font-size: 180%;
+}
